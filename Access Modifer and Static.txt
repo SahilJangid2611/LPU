@@ -1,0 +1,31 @@
+class example{ 
+   static int a; //permanent
+   int b; // contractual
+   void switchOnFan(){
+      System.out.print("Switch turned green" + b);
+   } 
+
+   private static void TurnMotorOn(){
+      System.out.println("Motor turned On");
+   }
+}
+
+public class Example2{
+   public static void main(String args[]){
+      // example obj1 = new example();
+      // obj1.a = 339;
+      // example obj2 = new example();
+      // System.out.println(obj2.a);
+      // // obj1.a = 20;
+      // // example obj2 = new example();
+      // // obj2.a = 30;
+      // // example obj3 = new example();
+      // System.out.println(obj1.a);
+      // // System.out.println(obj2.a);
+      // // System.out.println(obj3.a);
+      // // obj1.switchOnFan();
+      // // obj1.TurnMotorOn();
+      example obj1 = new example();
+      obj1.switchOnFan();
+   }
+}

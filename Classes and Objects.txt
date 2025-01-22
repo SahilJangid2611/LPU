@@ -1,0 +1,80 @@
+public class LPU {
+
+    //Primitive Data Types
+    String name= "abc";
+    byte a; // 8 bits
+    short h; //16 bits  -32700 to 32700
+    int b = 2000000000; //32 bits
+    long c; //64 bits 
+    float d; // 1.232
+    double e;
+    char f; //'A' 16 bits
+    boolean g; //represents true and false
+    
+
+    //Reference Data Type
+
+    //Objects - String, Array, 
+    //Array
+
+}
+
+
+class Car{
+    String color;
+    String model;
+    int year;
+
+     void drive(){
+        System.out.println("Moving Forward");
+        
+     }
+
+     void brake(){
+        System.out.println("Brakes Applied");
+     }
+}
+
+public class Main{
+   public static void main(String[] args){
+      Car ferrari = new Car(); // object 1
+      ferrari.model = "Ferrari";
+      ferrari.year = 2024;
+
+      System.out.println("the car model is : " + ferrari.model + " and year " + ferrari.year);
+      ferrari.drive(); // called the drive function using the object
+      ferrari.brake();
+
+       Car BMW = new Car(); // object 2
+       BMW.model = "BMW";
+       BMW.year = 2025;
+
+       System.out.println("the car model is : " + BMW.model + " and year " + BMW.year);
+      ferrari.drive(); // called the drive function using the object
+      ferrari.brake();
+
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

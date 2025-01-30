@@ -1,0 +1,52 @@
+class BankAccount{
+   private String accountHolderName = "";
+   private String accountNumber= "";
+   private double balance = 0.0;
+
+   public String getAccountHolderName(){
+      return accountHolderName;
+   }
+
+   public void setAccountHolderName(String accountHolderName){
+      this.accountHolderName = accountHolderName;
+   }
+
+   public String getAccountNumer(){
+      return accountNumber;
+   }
+
+   public void setAccountNumer(String accountNumber){
+      this.accountNumber = accountNumber;
+   }
+
+   public double getBalance(){
+      return balance;
+   }
+
+   public void deposit(double amount){
+      balance = balance + amount;
+      System.out.print("Deposited : " + amount );
+   }
+
+   public void withdraw(double amount){
+      if(amount <= balance){
+         balance  = balance - amount;
+         System.out.print("Withdraw : " + amount);
+      }else{
+         System.out.println("Insufficient Fund");
+      }
+   }
+
+}
+
+public class main{
+   public static void main(String[] args){
+      BankAccount myAccount = new BankAccount();
+      myAccount.setAccountHolderName("Aastha");
+      myAccount.setAccountNumer("2134567");
+
+      myAccount.deposit(10);
+      myAccount.withdraw(6);
+      
+   }
+}

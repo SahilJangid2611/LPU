@@ -1,0 +1,18 @@
+public class Day{
+   public static void main(String[] args){
+   Integer num1 = 10;
+   Integer num2 = 20;
+
+      if(num1.compareTo(num2) < 0){
+         System.out.print(num1 + " is less then " + num2);
+      }
+
+      System.out.print("Max Integer : " + Integer.MAX_VALUE);
+      System.out.print("Min Integer : " + Integer.MIN_VALUE);
+
+      
+   }
+}
+
+
+

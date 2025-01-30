@@ -1,0 +1,25 @@
+
+public class main{
+   enum Day {
+      SUNDAY("Relaxing Day"), 
+      MONDAY("Start of the Weekday"), 
+      TUESDAY("Second Day"), 
+      WEDNESDAY("Mid Week"), 
+      THURSDAY("Almost There"), 
+      FRIDAY("Weekend is Near"), 
+      SATURDAY("Weekend!");
+
+      private String description;
+      Day(String description){
+         this.description = description;
+      }
+
+   }
+
+
+   public static void main(String[] args){
+     Day today = Day.MONDAY;
+
+     System.out.println(today + ": " + today.description);
+   }
+}

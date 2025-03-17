@@ -1,0 +1,58 @@
+import java.sql.Date;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.Duration;
+import java.time.Period;
+
+public class main {
+
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        System.out.println("Today's Date :" +  today);
+
+        LocalDate specificDate = LocalDate.of(2025,3,18);
+        System.out.println("Specific Date: " + specificDate);
+
+        LocalDate tomorrow = today.plusDays(1);
+        System.out.println("tomorrow's Date" + tomorrow);
+
+        LocalDate yesterday = today.minusDays(1);
+        System.out.println("Yesterday's Date" + yesterday);
+
+        LocalTime now = LocalTime.now();
+        System.out.println("Today's time :" +  now);
+
+        LocalTime specificTime = LocalTime.of(3,18);
+        System.out.println("Specific Time : " + specificTime);
+
+        LocalTime oneHourLater = now.plusHours(1);
+        System.out.println("One Hour Later Time : " + oneHourLater);
+
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println("Date and Time : " + dateTime);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-yyyy-dd HH:mm:ss");
+        String formattedDateTime =  dateTime.format(formatter);
+        System.out.println("Date and Time : " + formattedDateTime);
+
+        String dateTimeString = "03-2025-17 19:48:42";
+        LocalDateTime parsedTime = LocalDateTime.parse(dateTimeString, formatter);
+        System.out.println(parsedTime);
+        System.out.println(parsedTime.getClass().getName());
+
+        LocalTime start = LocalTime.of(10,20);
+        LocalTime end = LocalTime.of(14,25);
+        Duration duration = Duration.between(start, end);
+        System.out.println("Duration: " + duration.toHours() + " Hours and " + duration.toMinutes() %60 + " minutes.");
+
+
+        LocalDate startDate = LocalDate.of(2020,1,7);
+        LocalDate endDate = LocalDate.of(2021,2,28);
+
+        Period period = Period.between(startDate, endDate);
+        System.out.println(period.getYears() + " years" + period.getMonths() + " months," + period.getDays() + " days.");
+    }
+}

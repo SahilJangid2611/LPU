@@ -1,0 +1,120 @@
+How JavaScript Works
+Explain the concept of the JavaScript event loop. How does it work with the call stack and callback queue?
+What is the difference between synchronous and asynchronous code in JavaScript?
+What are closures in JavaScript, and can you provide an example?
+What is the scope chain in JavaScript?
+Explain the difference between null and undefined in JavaScript.
+String Manipulation
+How would you reverse a string in JavaScript?
+Write a JavaScript function to remove all vowels from a string.
+What is the difference between substring() and slice() methods in JavaScript?
+How can you check if a string is a palindrome in JavaScript?
+Write a function to count the number of occurrences of a character in a string.
+Array Manipulation
+What is the difference between map() and forEach()?
+How would you merge two arrays in JavaScript?
+What is the purpose of the reduce() method, and can you provide an example?
+How would you remove duplicates from an array?
+Explain what happens when you use the push() and pop() methods in JavaScript arrays.
+Object Manipulation
+How would you deep clone an object in JavaScript?
+Explain object destructuring and provide an example.
+How can you merge two objects in JavaScript?
+What is the difference between Object.assign() and the spread operator ({...})?
+Write a JavaScript function to check if an object is empty.
+Asynchronous JavaScript
+What is a Promise in JavaScript, and how does it work?
+What is the difference between Promise.all() and Promise.race()?
+How do you handle errors in async/await syntax?
+What is the purpose of setTimeout() and setInterval() functions in JavaScript?
+Write an example of using async and await to fetch data from an API.
+2. React.js Concepts
+Props and State
+What is the difference between props and state in React?
+How can you update the state in a class-based React component?
+In functional components, how do you handle state management using hooks?
+Can you pass functions as props in React? Provide an example.
+What will happen if you mutate the state directly in React?
+Prop Drilling and HOC (Higher-Order Components)
+What is prop drilling, and how can you avoid it in React applications?
+Explain what a Higher-Order Component (HOC) is in React.
+How would you pass data from a parent component to a deeply nested child component without prop drilling?
+Give an example of a Higher-Order Component and explain how it works.
+Functional vs. Class Components
+What is the difference between class-based and functional components in React?
+What are the lifecycle methods in class-based React components? Can you name and explain a few of them?
+How would you convert a class-based component into a functional component?
+What is useEffect in functional components? Provide an example.
+How do you manage side effects (e.g., data fetching) in functional components?
+Hooks
+What is the useState hook used for in React?
+How does the useEffect hook work? Can you provide a scenario where it’s useful?
+What is the purpose of the useContext hook?
+Explain the useReducer hook. When would you prefer using it over useState?
+What are custom hooks in React, and why are they useful? Provide an example.
+Error Boundaries and Custom Hooks
+What is an error boundary in React? How does it help in handling errors in a React application?
+Explain how you would create a custom hook in React.
+How would you handle errors in a React component using error boundaries?
+Routing
+What is React Router, and how do you use it in a React application?
+What is the difference between <Route> and <Link> components in React Router?
+Explain the use of useHistory and useLocation hooks in React Router.
+How can you implement dynamic routing using React Router?
+
+
+
+
+
+
+JavaScript Coding Questions
+Reverse a string without using built-in methods like reverse() or split().
+
+Find the factorial of a number using recursion.
+
+Check if a string is a palindrome (i.e., reads the same forwards and backwards).
+
+Find the first non-repeating character in a string. If no unique character exists, return null.
+
+Generate the Fibonacci sequence up to a given number.
+
+Flatten a nested array into a single array (arrays within arrays).
+
+Find the sum of all even numbers in an array.
+
+Remove duplicates from an array of numbers.
+
+Find the largest sum of two numbers in an array.
+
+Merge two sorted arrays into one sorted array.
+
+Find the intersection of two arrays (i.e., the common elements).
+
+Check if two strings are anagrams of each other.
+
+Implement a debounce function that limits how frequently a function can be executed.
+
+Implement a throttle function that ensures a function is executed at most once in a specified time period.
+
+Find the longest substring without repeating characters in a given string.
+
+React Coding Questions
+Create a functional React component that tracks the number of button clicks using useState.
+
+Create a React functional component that fetches data from an API and displays it when the component mounts (using useEffect).
+
+Implement a basic form with input fields and a submit button. On submission, display the values entered in the form.
+
+Create a simple to-do list app that allows users to add and delete tasks using React state.
+
+Create a component that renders a list of items and adds the ability to remove an item from the list when clicked.
+
+Create a React component that implements conditional rendering (e.g., render different content based on a boolean state).
+
+Create a higher-order component (HOC) that adds logging functionality to a wrapped component.
+
+Implement a custom hook that tracks the window size and returns the current width and height.
+
+Create a simple counter with two buttons (increment and decrement), using useState in a functional component.
+
+Implement error boundaries in React to catch and display fallback UI when an error occurs in child components.
